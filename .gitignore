@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.streamlit_logs/
+
+# Environments
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data artifacts (keep folders, ignore contents)
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!data/processed/sydney_daily_current.csv
+!data/processed/X_train_cls.parquet
+!data/processed/X_val_cls.parquet
+!data/processed/X_test_cls.parquet
+!data/processed/y_train_cls.parquet
+!data/processed/y_val_cls.parquet
+!data/processed/y_test_cls.parquet
+!data/processed/X_train_reg.parquet
+!data/processed/X_val_reg.parquet
+!data/processed/X_test_reg.parquet
+!data/processed/y_train_reg.parquet
+!data/processed/y_val_reg.parquet
+!data/processed/y_test_reg.parquet
+
+# Model artifacts
+models/*
+!models/.gitkeep
+!models/rain_or_not/
+!models/rain_or_not/model.joblib
+!models/rain_or_not/features.txt
+!models/rain_or_not/metadata.json
+!models/precipitation_fall/
+!models/precipitation_fall/model.joblib
+!models/precipitation_fall/features.txt
+!models/precipitation_fall/metadata.json
+
+# Reports outputs
+reports/figures/*
+!reports/figures/.gitkeep
+
+# Build metadata
+*.egg-info/
+
+# OS
+.DS_Store
