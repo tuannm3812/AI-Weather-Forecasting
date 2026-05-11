@@ -30,6 +30,9 @@ dev = [
 pythonpath = ["src"]
 testpaths = ["tests"]
 
+[tool.poetry]
+packages = [{ include = "weather_forecasting", from = "src" }]
+
 [tool.setuptools]
 package-dir = {"" = "src"}
 
