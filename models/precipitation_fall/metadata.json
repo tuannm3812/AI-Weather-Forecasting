@@ -1,0 +1,21 @@
+{
+  "task": "precipitation_fall",
+  "timestamp": "20260511-154555",
+  "model_path": "C:\\Users\\ThinkPad\\Projects\\AI-Weather-Forecasting\\models\\precipitation_fall\\model.joblib",
+  "features_count": 47,
+  "features_path": "C:\\Users\\ThinkPad\\Projects\\AI-Weather-Forecasting\\models\\precipitation_fall\\features.txt",
+  "threshold": null,
+  "metrics": {
+    "mae": 9.05618792666116,
+    "rmse": 17.2623344006011,
+    "r2": 0.09103241296239084
+  },
+  "splits": {
+    "train_end": "2024-05-06",
+    "val_start": "2024-05-07",
+    "val_end": "2025-05-06",
+    "test_start": "2025-05-07",
+    "test_end": "2026-05-07"
+  },
+  "code_version": "project-script-v2"
+}
