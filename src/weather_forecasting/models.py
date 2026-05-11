@@ -6,6 +6,7 @@ from pathlib import Path
 
 import joblib
 import pandas as pd
+import sklearn
 from sklearn.ensemble import HistGradientBoostingClassifier, HistGradientBoostingRegressor, RandomForestRegressor
 from sklearn.metrics import (
     average_precision_score,
@@ -149,6 +150,12 @@ def save_model_bundle(
         "threshold": threshold,
         "metrics": metrics,
         "splits": split_metadata,
+        "training_environment": {
+            "python": ".".join(map(str, __import__("sys").version_info[:3])),
+            "pandas": pd.__version__,
+            "scikit_learn": sklearn.__version__,
+            "joblib": joblib.__version__,
+        },
         "code_version": "project-script-v2",
     }
     (out_dir / "metadata.json").write_text(json.dumps(metadata, indent=2), encoding="utf-8")
