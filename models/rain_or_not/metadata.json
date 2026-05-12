@@ -1,6 +1,6 @@
 {
   "task": "rain_or_not",
-  "timestamp": "20260511-154554",
+  "timestamp": "20260511-160931",
   "model_path": "C:\\Users\\ThinkPad\\Projects\\AI-Weather-Forecasting\\models\\rain_or_not\\model.joblib",
   "features_count": 47,
   "features_path": "C:\\Users\\ThinkPad\\Projects\\AI-Weather-Forecasting\\models\\rain_or_not\\features.txt",
